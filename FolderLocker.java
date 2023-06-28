@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.util.Scanner;
 import javax.crypto.Cipher;
 import javax.crypto.CipherInputStream;
-import javax.crypto.CipherOutputStream;
+//import javax.crypto.CipherOutputStream;
 import javax.crypto.spec.SecretKeySpec;
 
 public class FolderLocker {
@@ -13,16 +13,16 @@ public class FolderLocker {
     private static final String TRANSFORMATION = "AES";
 
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
 
         System.out.println("Enter the path of the folder to lock/unlock:");
-        String folderPath = scanner.nextLine();
+        String folderPath = sc.nextLine();
 
         System.out.println("Enter a password:");
-        String password = scanner.nextLine();
+        String password = sc.nextLine();
 
         System.out.println("Do you want to lock or unlock the folder? (lock/unlock)");
-        String operation = scanner.nextLine();
+        String operation = sc.nextLine();
 
         if (operation.equalsIgnoreCase("lock")) {
             lockFolder(folderPath, password);
@@ -34,7 +34,7 @@ public class FolderLocker {
             System.out.println("Invalid operation.");
         }
 
-        scanner.close();
+        sc.close();
     }
 
     public static void lockFolder(String folderPath, String password) {
