@@ -1,6 +1,9 @@
 (1) The First project in this repository is FolderLocker which is implemented in java
 so, It is FolderLocker.java
-Download
+
+Download:
+https://github.com/KSHarsha-github/Projects-CodeClause/blob/main/FolderLocker.java
+
 Folder Locker
 ------------
 --> The basic objective is to lock/unlock the specified folder
@@ -15,6 +18,10 @@ by giving password
 
 (2) The Second project in this repository is TimerStopwatch which is implemented in java
 so, It is TimerStopwatch.java
+
+Download:
+https://github.com/KSHarsha-github/Projects-CodeClause/blob/main/TimerStopwatch.java
+
 Timer and Stopwatch
 -------------------
 --> The objective of this project is to run a Timer or Stopwatch using Multithreading in Java.
